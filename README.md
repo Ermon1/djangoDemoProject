@@ -1,1 +1,1 @@
-# djangoDemoProject
+# django note writter project
