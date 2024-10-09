@@ -7,7 +7,7 @@ import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constant'
 function ProtectedRout({children}) {
     const  [isAuthorized,  setAuthorized]=useState(null)
 useEffect(()=>{
-    auth().catch(()=>{setAuthorized(false)})
+    auth().catch(()=>{setAuthorized(false)
 })
 
 
