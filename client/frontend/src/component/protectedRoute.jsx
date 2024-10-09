@@ -8,7 +8,7 @@ function ProtectedRout({children}) {
     const  [isAuthorized,  setAuthorized]=useState(null)
 useEffect(()=>{
     auth().catch(()=>{setAuthorized(false)
-})
+})})
 
 
     const refreshToken= async ()=>{
@@ -52,4 +52,5 @@ useEffect(()=>{
     return isAuthorized ? children:<navigate to="/login"/>
 }
 }
+
 export default ProtectedRout
